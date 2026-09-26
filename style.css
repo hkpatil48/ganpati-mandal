@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Yatra+One&family=Poppins:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+:root {
+  --primary-saffron: #f97316;
+  --deep-vermilion: #dc2626;
+  --royal-maroon: #831843;
+  --gold-primary: #eab308;
+  --gold-glow: #fef08a;
+  --bg-festive: #fffbeb;
+}
+
+body {
+  font-family: 'Poppins', 'Tiro Devanagari Marathi', sans-serif;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 50%, #fef3c7 100%);
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-yatra {
+  font-family: 'Yatra One', cursive, sans-serif;
+}
+
+.font-rozha {
+  font-family: 'Rozha One', serif;
+}
+
+.font-marathi {
+  font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+/* Festive Header Pattern */
+.festive-pattern {
+  background-color: #7f1d1d;
+  background-image: radial-gradient(#d97706 1px, transparent 1px), radial-gradient(#ea580c 1px, #7f1d1d 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Gold Gradient Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #fde047 0%, #fbbf24 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.saffron-gradient {
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #9a3412 100%);
+}
+
+.btn-festive {
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 50%, #eab308 100%);
+  background-size: 200% auto;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(234, 88, 12, 0.4);
+}
+
+.btn-festive:hover, .btn-festive:active {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 88, 12, 0.5);
+}
+
+/* Festive Card Styling */
+.festive-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  box-shadow: 0 10px 30px -5px rgba(234, 88, 12, 0.15), 0 0 0 1px rgba(245, 158, 11, 0.1);
+}
+
+/* Ornamental Certificate Border */
+.certificate-container {
+  width: 1000px;
+  height: 700px;
+  background: #fffdf5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.certificate-border-outer {
+  border: 12px solid #851c1d;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  pointer-events: none;
+}
+
+.certificate-border-inner {
+  border: 3px double #d97706;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  pointer-events: none;
+}
+
+.certificate-corner {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-color: #b45309;
+}
+
+.corner-tl {
+  top: 24px;
+  left: 24px;
+  border-top: 5px solid #d97706;
+  border-left: 5px solid #d97706;
+}
+
+.corner-tr {
+  top: 24px;
+  right: 24px;
+  border-top: 5px solid #d97706;
+  border-right: 5px solid #d97706;
+}
+
+.corner-bl {
+  bottom: 24px;
+  left: 24px;
+  border-bottom: 5px solid #d97706;
+  border-left: 5px solid #d97706;
+}
+
+.corner-br {
+  bottom: 24px;
+  right: 24px;
+  border-bottom: 5px solid #d97706;
+  border-right: 5px solid #d97706;
+}
+
+/* Certificate Watermark */
+.cert-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.04;
+  pointer-events: none;
+  width: 420px;
+  height: 420px;
+}
+
+/* Decorative Marigold Toran Animation */
+@keyframes sway {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+
+.toran-sway {
+  animation: sway 4s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* Pulse animation for CTA */
+@keyframes festive-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(234, 88, 12, 0);
+  }
+}
+
+.pulse-glow {
+  animation: festive-pulse 2.2s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ffedd5;
+}
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 4px;
+}
